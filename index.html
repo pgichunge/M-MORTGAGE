@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>M-MOGAGE</title>
+    <link rel="stylesheet" href="css/style.css" media="all">
+   
+</head>
+
+<body>
+    <div class="content">
+        <div class="container">
+            <h1>m-mortgage</h1>
+            <p>This web application takes the customes details ie the id number and account number for the 
+                mortgage loan and tracks the loan information for the customer </p>from the app the end user gets the loan balance,
+                property value and the taxes for that particular period.
+            
+            <p>Fill the form below then submit to get your Akan name.</p>
+            <form class="myform" onsubmit="return getAkanName()">
+                <label for="year-of-birth">
+            Year:
+            <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+          </label>
+                <label for="month-of-birth">
+            Month:
+            <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+          </label>
+                <label for="day-of-birth">
+            Day:
+            <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+          </label>
+                <br>
+                <label for="gender">
+            <p>Select your gender: </p>
+
+            Female
+            <input id="female-input" type="radio" name="gender" value="female" required>
+            Male
+            <input id="male-input" type="radio" name="gender" value="male" required>
+           
+
+          </label>
+                <br><br>
+                <input id="get-name" type="submit" name="" value="GET NAME">
+                <br><br>
+            </form>
+
+
+            <h4 id=display-name><strong>See your name here:</strong></h4>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
